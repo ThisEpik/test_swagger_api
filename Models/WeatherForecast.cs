@@ -1,4 +1,4 @@
-namespace test_swagger_api
+namespace test_swagger_api.Models
 {
     public class WeatherForecast
     {
