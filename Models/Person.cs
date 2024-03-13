@@ -1,15 +1,12 @@
+using System.Diagnostics.CodeAnalysis;
+
 namespace test_swagger_api.Models
 {
-    public class Person
+    [method: SetsRequiredMembers]
+    public class Person(int id, string name, int age)
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public int Age { get; set; }
-
-       public Person(int id, string name, int age) {
-            Id = id;
-            Name = name;
-            Age = age;
-        }
+        public int Id { get; set; } = id;
+        public string Name { get; set; } = name;
+        public int Age { get; set; } = age;
     }
 }
